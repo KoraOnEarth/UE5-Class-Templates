@@ -1,0 +1,26 @@
+%COPYRIGHT_LINE%
+
+%PCH_INCLUDE_DIRECTIVE%
+%MY_HEADER_INCLUDE_DIRECTIVE%
+%ADDITIONAL_INCLUDE_DIRECTIVES%
+
+%PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%()
+{
+	PrimaryActorTick.bCanEverTick = false;
+
+}
+
+void %PREFIXED_CLASS_NAME%::BeginPlay()
+{
+	Super::BeginPlay();
+	%CURSORFOCUSLOCATION%
+}
+
+
+void %PREFIXED_CLASS_NAME%::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+}
+
+%ADDITIONAL_MEMBER_DEFINITIONS%
